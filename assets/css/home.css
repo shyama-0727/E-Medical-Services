@@ -1,0 +1,237 @@
+html,body{
+    width:100%;
+    height:100%;
+    padding:0%;
+    margin:0%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+}
+.colored-section{
+    background-color:#009879;
+    padding: 1% 0% 1%;
+}
+.white-section{
+    background-color: #fff;
+}
+/* ==============================================================HOME PAGE==================================================== */
+
+
+/* ===== Title section ===== */
+.big-heading{
+    color:#fff;
+    font-size:2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    padding-top: 7%;
+    padding-left:3%;
+}
+.title-para{
+    color:#fff;
+    font-weight: normal;
+    padding: 2% 8%;
+}
+.title-img{
+    width:90%;
+    height:60%;
+    border-radius: 50%;
+    margin-top:15%;
+}
+@media only screen and (max-width: 600px) {
+  .title-img{
+    width:80%;
+    height:80%;
+    border-radius: 50%;
+    margin-top:15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+}
+
+@media only screen and (max-width: 1000px) {
+  .title-img{
+    width:60%;
+    height:60%;
+    border-radius: 50%;
+    margin-top:15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+}
+/* ===== Direction Section ===== */
+
+#direction{
+    padding-top:5%;
+    padding-bottom:15%;
+}
+.dir-img{
+    border-radius: 100%;
+    margin-top:10%;
+    width: 25%;
+    margin-left: 38%;
+}
+.dir-heading{
+    color:#fff;
+    font-size:2rem;
+    font-weight: bold;
+    padding: 1%;
+    text-align: center;
+}
+.dir-side-heading{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color:#fff;
+}
+
+.dir-para{
+    color:#fff;
+    font-size:16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.dir-anchor a{
+    color:#ff568c;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    
+}
+.dir-icon{
+    color:#ff568c;
+}
+
+/* ===== About Section ===== */
+.about-heading{
+    color:#009879;
+    font-size:23px;
+    font-weight:bold;
+    margin-top:15px;
+}
+.imag{
+    width:100%;
+    height:100%;
+}
+.about-para{
+    font-size:20px;
+}
+.about-anchor{
+    padding:2% 35%;
+}
+.btn{
+    border-radius: 30px;
+    cursor: pointer;
+    background: #009879;
+    color:#fff;
+    border: none;
+    padding: 12px;  
+    outline: none;
+}
+.btn:hover{
+    background-color:#ff568c;
+    color:white;
+}
+
+/* Advantage section */
+#advantage-section{
+    padding-bottom: 5%;
+}
+.ad-bold{
+    color:white;
+    font-size:30px;
+    padding-bottom: 15%;
+}
+.ad-icon{
+    padding-top:4%;
+    color:#fff;
+}
+.ad-heading{
+    color:#fff;
+    font-size: 20px;
+    font-weight:bold;
+    padding-top:5%;
+}
+.ad-para{
+    color:white;
+    font-size:20px;
+    
+}
+
+
+/* Department section */
+#department-section{
+    padding-top:5%;
+}
+.box{
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    border-radius: 20px;
+    width:250px;
+    height:400px;
+    background-color:#d3d3d3;
+    box-shadow:2px 10px 12px rgba(0,0,0,0.5);
+}
+.depart-img{
+    margin-top:-30px;
+    margin-left:63px;
+    border-radius:50%;
+    background-color:#009879;
+    width:120px;
+    height:120px;
+}
+.depart-heading{
+    color:#009879;
+    
+    font-weight:bold;
+    font-size:30px;
+}
+.depart-para{
+    color:#009FFD;
+    
+    font-size:20px;
+}
+
+/* Doctor section */
+.doc-img{
+    width:80%;
+}
+.doc-heading{
+    
+    color:#009879;
+    font-size:30px;
+}
+.doc-para{
+    
+    font-size:20px;
+    color:#009879;
+}
+
+/* footer section */
+#foo-section{
+    background-color: #0E2431;
+    color:#fff;
+}
+
+.text-muted{
+    color:#fff;
+    text-decoration: none;   
+}
+.text-muted:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+/* connect with me */
+
+.connect-para{
+    color:white;
+    font-size:15px;
+    
+    margin-left:0px;
+    padding:5% 10%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E MEDICAL SERVICES</title>
+
+    <!-- Title icon -->
+    <link rel="icon" href="assets/images&gif/others/logo.jpg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Css Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/css/signin.css">
+   
+  
+</head>
+<body>
+    <!-- Back Navigation -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.php"><i class="fas fa-backward"></i> Back</a>
+    </nav>
+
+    <div class="signin-menu">
+		<div class="signin-formbox">
+		    <center>
+                <img src="assets/images&gif/others/login.jpg" class="signin-avatar" style="width:90px;height:90px;">
+                <h1 style="color:#009879;">LOGIN</h1>
+            </center>
+			<div class="signin-buttonbox">
+                <div id="signin-btn"></div>
+                <button style="outline:none" type="button"  class="signin-toggle-btn" onclick="login1()">Patient</button>
+                <button style="outline:none" type="button"  class="signin-toggle-btn" onclick="login2()">Doctor</button>
+		    </div>
+		   
+            <form action="patient/partials/patient_db.php" method="post" id="login1" class="signin-input-group" autocomplete="off">	
+		        
+                <input type="text" name="pat_email" class="signin-input-field" placeholder="Email Id" required>
+			
+                <span class="eye" onclick="pat_eye()">
+                    <i id="hide1"class="fa fa-eye" style="margin-bottom: auto;color:#009879;"></i>
+                    <i id="hide2"class="fa fa-eye-slash" style="margin-bottom: auto;color:#009879;"></i>
+                </span>
+                
+                <input type="password" name="pat_password" class="signin-input-field" id="myinput1" placeholder="Enter Password" ><br><br>
+                <center><button type="submit" style="outline:none" name="pat_login"class="signin-submit-btn">Patient login</button></center>
+		    </form>
+		
+            <form action="doctor/partials/doctor_db.php" method="post" id="login2" class="signin-input-group" autocomplete="off">
+                <input type="text" name="doc_email" class="signin-input-field" placeholder="Email Id" required>
+                    
+                <span class="eye" onclick="doc_eye()">
+                    <i id="hide3"class="fa fa-eye" style="margin-bottom: auto;color:#009879;"></i>
+                    <i id="hide4"class="fa fa-eye-slash" style=" margin-bottom: auto;color:#009879;"></i>
+                </span>
+
+                <input type="password" name="doc_password" class="signin-input-field" id="myinput2" placeholder="Enter Password" ><br><br>
+                <center><button type="submit" style="outline:none" name="doc_login" class="signin-submit-btn">Doctor login</button></center>
+            </form>
+		</div>
+	</div>
+	<script src="assets/js/script.js"></script>
+     <!--FontAwesome-->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+     <!--Bootstrap-->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

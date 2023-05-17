@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E MEDICAL SERVICES</title>
+
+    <!-- Title icon -->
+    <link rel="icon" href="assets/images&gif/others/logo.jpg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Css Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/signup.css">
+   
+</head>
+<body>
+    <!-- Back Navigation -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.php"><i class="fas fa-backward"></i> Back</a>
+    </nav>
+
+    
+    <div class="signup-menu">
+		<div class="signup-formbox">
+		    <center>
+                <img src="assets/images&gif/others/login.jpg" class="signup-avatar">
+                <h1 class="signup-form-header">PATIENT REGISTRATION</h1>
+            </center>
+
+            <form action="patient/partials/patient_db.php" method="post" id="login1" class="signup-input-group" autocomplete="off">	
+		        <input type="text" name="fullname" class="signup-input-field" placeholder="Full Name" required>
+		        <input type="email" name="email" class="signup-input-field" placeholder="Email Id" required>
+		        <input type="text" maxlength="10" name="phoneno" class="signup-input-field" placeholder="Phone Number" required>
+			
+                <span class="eye" onclick="pat_eye()">
+                    <i id="hide1"class="fa fa-eye" style="margin-bottom: auto;color:#009879;"></i>
+                    <i id="hide2"class="fa fa-eye-slash" style="margin-bottom: auto;color:#009879;"></i>
+                </span>
+                
+                <input type="password" name="password" class="signup-input-field" id="myinput1" placeholder="Enter Password" ><br>
+                <span class="eye" onclick="doc_eye()">
+                    <i id="hide3"class="fa fa-eye" style="margin-bottom: auto;color:#009879;"></i>
+                    <i id="hide4"class="fa fa-eye-slash" style="margin-bottom: auto;color:#009879;"></i>
+                </span>
+                <input type="password" name="cpassword" class="signup-input-field" id="myinput2" placeholder="Confirm Password" required>
+
+
+                <select name="gender"  class="signup-input-field"required>
+                    <option value="" disabled selected>--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+               </select><br><br>
+                <a href="pat_doc_signin.html" id="up" style="text-decoration:none; font-family: sans-serif;color:#ff568c;">Already have an account?</a>
+                <br><br>
+                <center>
+                    <button type="submit" style="outline:none" name="pat_register" class="signup-submit-btn">Patient Register</button>
+                </center>                
+		    </form>
+		</div>
+	</div>
+         <!--FontAwesome-->
+    <script src="assets/js/script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

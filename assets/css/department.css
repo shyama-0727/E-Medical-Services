@@ -1,0 +1,41 @@
+
+body{
+    background-color: #009879;
+    font-family: 'Poppins', sans-serif;
+
+}
+    p {
+	   font-size: 16px;
+	}
+    .margin {
+	   margin-bottom: 45px;
+	}
+    .bg-1 { 
+       background-color: #009879; /* Green */
+       color: #ffffff;
+    }
+    .bg-2 { 
+       background-color: #474e5d; /* Dark Blue */
+       color: #ffffff;
+    }
+    .container-fluid {
+       padding-top: 70px;
+       padding-bottom: 70px;
+    }
+    .img-circle{
+       width:50%;
+       display:inline;
+       border-radius:100%;
+    }
+    .text-center{
+       margin-top:20px;
+       border-radius:3%;
+    }
+    @media only screen and (max-width: 600px) {
+   .img-circle{
+       width:50%;
+       height:10%;
+       display:inline;
+       border-radius:100%;
+    }
+}
